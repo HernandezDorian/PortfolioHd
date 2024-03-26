@@ -1,0 +1,80 @@
+body {
+  background-image: url("./assets/low-poly-abstract-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: "Noto Sans Thai Looped", sans-serif;
+}
+
+.Header {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 159, 255, 0.5) 0%,
+    rgba(236, 47, 75, 0.3) 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  height: 80px;
+  backdrop-filter: blur(2px);
+  &__right {
+    display: flex;
+    align-items: center;
+    &__nav {
+      display: flex;
+      font-size: 20px;
+      margin-left: 15px;
+      gap: 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    &__logo {
+      width: fit-content;
+      margin: 0;
+      background: linear-gradient(247deg, #009fff 13.86%, #ec2f4b 90.18%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.Hello {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 48px;
+  font-weight: 800;
+  &__description {
+    &__name {
+      background: linear-gradient(
+        90deg,
+        #ec2f4b 27.79%,
+        #009fff 99.79%,
+        #00c9ff 99.79%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__typewritter {
+    background: linear-gradient(90deg, #009fff 0%, #ec2f4b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
