@@ -1,15 +1,41 @@
+// import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import PageContainer from "../page-container/page-container";
+
 export default function HelloMain() {
+  const speciality = [
+    "Développeur web",
+    "Freelancer",
+    "Spécialité Front : React.JS",
+    "Spécialité Back : Next.JS",
+    "Forte appétence front-end !",
+  ];
+
   return (
-    <section className="Hello">
-      <h2 className="Hello__title">
-        Bonjour !<span className="Hello__title__hand">👋</span>
-      </h2>
-      <br />
-      <p className="Hello__description">
-        Je suis{" "}
-        <span className="Hello__description__name">Hernandez Dorian</span>
-      </p>
-      <p className="Hello__typewritter">TypeWritter spécialité</p>
-    </section>
+    <PageContainer>
+      <section className="Hello" id="hello">
+        <h2 className="Hello__title">
+          Bonjour !<div className="Hello__title__hand">👋</div>
+        </h2>
+        <br />
+        <p className="Hello__description">
+          Je suis{" "}
+          <span className="Hello__description__name">Hernandez Dorian</span>
+        </p>
+        <span className="Hello__typewritter">
+          <Typewriter
+            words={speciality}
+            loop={0}
+            cursor
+            // cursorStyle="_"
+            // cursorColor="black"
+            // cursorBlinking={true}
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
+      </section>
+    </PageContainer>
   );
 }

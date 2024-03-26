@@ -1,15 +1,19 @@
 // import "./App.css";
 import "./App.scss";
+import AboutMe from "./components/about-me/about-me.jsx";
 import Header from "./components/header/header";
 import HelloMain from "./components/hello/hello.jsx";
 
 function App() {
   return (
     <>
+      {/* Header */}
       <Header />
-      {/* <p>AAA</p> */}
+      {/* Bonjour jusqu'au typewritter */}
       <HelloMain />
-      <section>Bonjour + typewriter</section>
+      {/* A propos de moi */}
+      <AboutMe />
+
       <section>A propos de moi</section>
       <section>Mes projets</section>
       <section>Contact</section>
