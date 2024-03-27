@@ -9,6 +9,27 @@ export default function calendar() {
         username="HernandezDorian"
         colorScheme="dark"
         weekStart="1"
+        labels={{
+          totalCount: "{{count}} commits publiques l'année passée",
+          legend: {
+            less: "Peu",
+            more: "Beaucoup",
+          },
+          months: [
+            "Jan",
+            "Fev",
+            "Mar",
+            "Avr",
+            "Mai",
+            "Jun",
+            "Jul",
+            "Aou",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+        }}
       />
     </PageContainer>
   );
