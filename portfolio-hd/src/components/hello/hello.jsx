@@ -1,5 +1,5 @@
 // import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+import { Typewriter, Cursor } from "react-simple-typewriter";
 import PageContainer from "../page-container/page-container";
 
 export default function HelloMain() {
@@ -22,18 +22,21 @@ export default function HelloMain() {
           Je suis{" "}
           <span className="Hello__description__name">Hernandez Dorian</span>
         </p>
-        <span className="Hello__typewritter">
-          <Typewriter
-            words={speciality}
-            loop={0}
-            cursor
-            // cursorStyle="_"
-            // cursorColor="black"
-            // cursorBlinking={true}
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
+        <span>
+          <span className="Hello__typewritter">
+            <Typewriter
+              words={speciality}
+              loop={0}
+              cursor
+              // cursorStyle="_"
+              // cursorColor="black"
+              // cursorBlinking={true}
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </span>
+          <Cursor />
         </span>
       </section>
     </PageContainer>
