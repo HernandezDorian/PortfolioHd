@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AngularSVG from "../../assets/lang/angular-svgrepo-com.svg";
 import BootstrapSVG from "../../assets/lang/bootstrap-fill_svgrepo.com.svg";
 import CssSVG from "../../assets/lang/css_svgrepo.com.svg";
 import HtmlSVG from "../../assets/lang/html-16_svgrepo.com.svg";
@@ -13,24 +14,9 @@ import reduxSVG from "../../assets/lang/redux_svgrepo.com.svg";
 import tailwindSVG from "../../assets/lang/tailwind_svgrepo.com.svg";
 import wordpressSVG from "../../assets/lang/wordpress-139_svgrepo.com.svg";
 
-// const svgs = {
-//   CssSVG,
-//   HtmlSVG,
-//   JavascriptSVG,
-//   reactSVG,
-//   reduxSVG,
-//   nextJSSVG,
-//   tailwindSVG,
-//   mongoDBSVG,
-//   wordpressSVG,
-//   phpSVG,
-//   BootstrapSVG,
-//   JquerySVG,
-// };
-
 const svgs = {
-  CssSVG: { svg: CssSVG, text: "CSS" },
   HtmlSVG: { svg: HtmlSVG, text: "HTML" },
+  CssSVG: { svg: CssSVG, text: "CSS" },
   JavascriptSVG: { svg: JavascriptSVG, text: "JavaScript" },
   reactSVG: { svg: reactSVG, text: "React" },
   reduxSVG: { svg: reduxSVG, text: "Redux" },
@@ -40,11 +26,43 @@ const svgs = {
   pythonSVG: { svg: pythonSVG, text: "Python" },
   wordpressSVG: { svg: wordpressSVG, text: "WordPress" },
   phpSVG: { svg: phpSVG, text: "PHP" },
+  AngularSVG: { svg: AngularSVG, text: "Angular" },
   BootstrapSVG: { svg: BootstrapSVG, text: "Bootstrap" },
   JquerySVG: { svg: JquerySVG, text: "jQuery" },
 };
 
 export default function Languages() {
+  const [specialityCSS, setSpecialityCSS] = useState(false);
+
+  const specialityList = [
+    "CssSVG",
+    "JavascriptSVG",
+    "reactSVG",
+    "reduxSVG",
+    "nextJSSVG",
+  ];
+
+  const specialitybtn = () => {
+    setSpecialityCSS(!specialityCSS);
+  };
+
+  useEffect(() => {
+    if (specialityCSS) {
+      specialityList.forEach((elem) => {
+        document.querySelector(
+          `.Aboutme__lang__list__${elem}`
+        ).style.boxShadow = "0px 0px 5px 2px rgba(255, 255, 255, 0.4)";
+      });
+    } else if (!specialityCSS) {
+      specialityList.forEach((elem) => {
+        document.querySelector(
+          `.Aboutme__lang__list__${elem}`
+        ).style.boxShadow = "none";
+      });
+    }
+    return () => {};
+  }, [specialityCSS, specialityList]);
+
   return (
     <div className="Aboutme__lang">
       <h3 className="Aboutme__lang__title">
@@ -53,7 +71,7 @@ export default function Languages() {
       <div className="Aboutme__lang__list">
         {Object.entries(svgs).map(([name, { svg: SvgSrc, text }], i) => (
           <img
-            className="Aboutme__lang__list__elem"
+            className={`Aboutme__lang__list__elem Aboutme__lang__list__${name}`}
             key={i}
             src={SvgSrc}
             alt={name}
@@ -61,26 +79,9 @@ export default function Languages() {
           />
         ))}
       </div>
+      <button className="Aboutme__lang__btn" onClick={specialitybtn}>
+        Mes spécialités
+      </button>
     </div>
   );
 }
-
-// export default function Languages() {
-//   return (
-//     <div className="Aboutme__lang">
-//       <h3 className="Aboutme__lang__title">
-//         {"Les différentes technologies web que j'ai pu utiliser"}
-//       </h3>
-//       <div className="Aboutme__lang__list">
-//         {Object.entries(svgs).map(([name, SvgSrc], i) => (
-//           <img
-//             key={i}
-//             className="Aboutme__lang__list__elem"
-//             src={SvgSrc}
-//             alt={name}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }

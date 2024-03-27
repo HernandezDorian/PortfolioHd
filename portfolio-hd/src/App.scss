@@ -138,6 +138,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &__btn {
+      border-radius: 8px;
+      background: linear-gradient(100deg, #009fff 0%, #ec2f4b 100%);
+      color: white;
+      border: none;
+      padding: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      &:hover {
+        scale: 1.1;
+      }
+    }
     &__title {
       font-size: 28px;
       font-weight: 700;
@@ -153,7 +167,7 @@ body {
         width: 60px;
         &:hover {
           opacity: 100%;
-          scale: 1.1;
+          scale: 1.2;
         }
       }
     }
@@ -163,9 +177,9 @@ body {
 @keyframes hand {
   0%,
   100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scaleX(-1);
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(15deg) scaleX(-1);
   }
 }
