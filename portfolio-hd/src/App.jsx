@@ -16,13 +16,13 @@ function App() {
       {/* A propos de moi  GRADIENT*/}
       <AboutMe />
       {/* Languages  R*/}
-      {/* <Calendar /> */}
-      <Calendar />
       <section>Languages</section>
       {/* Jours ou je code Gradient */}
       <section>Jours ou je code</section>
       {/* Mes projets R */}
       <section>Mes projets</section>
+      <Calendar />
+      {/* <Calendar /> */}
       {/* Contact Gradient */}
       <section>Contact</section>
     </>

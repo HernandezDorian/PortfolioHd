@@ -22,22 +22,22 @@ export default function HelloMain() {
           Je suis{" "}
           <span className="Hello__description__name">Hernandez Dorian</span>
         </p>
-        <span>
+        <div>
           <span className="Hello__typewritter">
             <Typewriter
               words={speciality}
               loop={0}
-              cursor
+              // cursor
               // cursorStyle="_"
-              // cursorColor="black"
+              cursorColor="black"
               // cursorBlinking={true}
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
             />
           </span>
-          <Cursor />
-        </span>
+          <Cursor cursorColor="#ec2f4b" cursorStyle="_" />
+        </div>
       </section>
     </PageContainer>
   );
