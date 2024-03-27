@@ -5,7 +5,11 @@ import PageContainer from "../page-container/page-container";
 export default function calendar() {
   return (
     <PageContainer>
-      <GitHubCalendar username="HernandezDorian" colorScheme="dark" />
+      <GitHubCalendar
+        username="HernandezDorian"
+        colorScheme="dark"
+        weekStart="1"
+      />
     </PageContainer>
   );
 }
