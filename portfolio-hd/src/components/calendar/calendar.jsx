@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import GitHubCalendar from "react-github-calendar"; // https://grubersjoe.github.io/react-github-calendar/
 import PageContainer from "../page-container/page-container";
 
@@ -7,8 +7,9 @@ export default function calendar() {
     <PageContainer>
       <GitHubCalendar
         username="HernandezDorian"
-        colorScheme="dark"
+        // colorScheme="dark"
         weekStart="1"
+        color="#ec2f4b"
         labels={{
           totalCount: "{{count}} commits publiques l'année passée",
           legend: {
