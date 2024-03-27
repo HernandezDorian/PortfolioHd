@@ -95,12 +95,12 @@ body {
     rgba(0, 159, 255, 1) 3.68%,
     rgba(236, 47, 75, 1) 90.49%
   );
-
+  padding: 31px 0;
   &__int {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 31px 0;
+    overflow: hidden;
     gap: 12px;
     color: black;
     &__txtZone {
@@ -128,6 +128,32 @@ body {
 
         &:hover {
           transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &__lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    &__list {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      &__elem {
+        opacity: 80%;
+        width: 60px;
+        &:hover {
+          opacity: 100%;
+          scale: 1.1;
         }
       }
     }
