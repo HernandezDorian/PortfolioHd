@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function languages() {
-  return <div>languages</div>;
+export default function Languages() {
+  return <div className="Aboutme__lang">languages</div>;
 }

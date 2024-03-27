@@ -1,3 +1,4 @@
+import Languages from "../languages/languages";
 import PageContainer from "../page-container/page-container";
 import pp from "./../../assets/PP.jpg";
 
@@ -37,6 +38,7 @@ export default function AboutMe() {
             </p>
           </div>
         </div>
+        <Languages />
       </PageContainer>
     </section>
   );

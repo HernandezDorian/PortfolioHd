@@ -27,10 +27,6 @@ export default function HelloMain() {
             <Typewriter
               words={speciality}
               loop={0}
-              // cursor
-              // cursorStyle="_"
-              cursorColor="black"
-              // cursorBlinking={true}
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
