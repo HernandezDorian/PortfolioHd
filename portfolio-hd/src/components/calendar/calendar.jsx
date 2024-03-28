@@ -9,7 +9,7 @@ export default function calendar() {
         username="HernandezDorian"
         // colorScheme="dark"
         weekStart="1"
-        color="#ec2f4b"
+        // color="#ec2f4b"
         labels={{
           totalCount: "{{count}} commits publiques l'année passée",
           legend: {

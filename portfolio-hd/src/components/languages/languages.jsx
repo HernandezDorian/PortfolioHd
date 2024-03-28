@@ -79,7 +79,7 @@ export default function Languages() {
           />
         ))}
       </div>
-      <button className="Aboutme__lang__btn" onClick={specialitybtn}>
+      <button className="Aboutme__lang__btn button" onClick={specialitybtn}>
         Mes spécialités
       </button>
     </div>

@@ -5,6 +5,7 @@ import Calendar from "./components/calendar/calendar.jsx";
 
 import Header from "./components/header/header";
 import HelloMain from "./components/hello/hello.jsx";
+import Projets from "./components/projets/projets.jsx";
 // import GitHubCalendar from "react-github-calendar";
 function App() {
   return (
@@ -16,11 +17,9 @@ function App() {
       {/* A propos de moi  GRADIENT*/}
       <AboutMe />
       {/* Languages  R*/}
-      <section>Languages</section>
-      {/* Jours ou je code Gradient */}
-      <section>Jours ou je code</section>
+
       {/* Mes projets R */}
-      <section>Mes projets</section>
+      <Projets />
       <Calendar />
       {/* <Calendar /> */}
       {/* Contact Gradient */}
