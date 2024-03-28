@@ -27,17 +27,21 @@ body {
   }
 }
 
-.Header {
-  display: flex;
+Header {
   position: fixed;
+  z-index: 1000;
   width: 100%;
   align-items: center;
-  z-index: 1000;
   background: linear-gradient(
     90deg,
     rgba(0, 159, 255, 0.8) 0%,
     rgba(236, 47, 75, 0.8) 100%
   );
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0;
   height: 80px;
@@ -246,8 +250,86 @@ body {
   }
 }
 
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 26px 80px;
+    height: fit-content;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__input {
+        padding: 5px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        &:focus {
+          outline: none;
+        }
+      }
+      &__label {
+      }
+      &__btn {
+        border-radius: 8px;
+        background: linear-gradient(100deg, #009fff 0%, #ec2f4b 100%);
+        color: white;
+        border: none;
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
+
 .pageContainer-comp {
   width: auto !important;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ft {
+  background: linear-gradient(
+    100deg,
+    rgba(0, 159, 255, 0.9) 3.68%,
+    rgba(236, 47, 75, 0.9) 90.49%
+  );
+  margin-top: 30px;
 }
 
 @keyframes hand {
