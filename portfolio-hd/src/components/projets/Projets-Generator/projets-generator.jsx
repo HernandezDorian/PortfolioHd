@@ -22,14 +22,16 @@ export default function ProjetsGenerator({ projects }) {
             <p className="Project__div__elem__card__desc">
               {project.description}
             </p>
-            <button className="Projects__div__elem__card__btn button">
-              GITHUB{" "}
-              <img
-                className="Projects__div__elem__card__btn__git"
-                src={GithubLogo}
-                alt="Github Logo"
-              />
-            </button>
+            <a href={project.github} target="_blank">
+              <button className="Projects__div__elem__card__btn button">
+                GITHUB{" "}
+                <img
+                  className="Projects__div__elem__card__btn__git"
+                  src={GithubLogo}
+                  alt="Github Logo"
+                />
+              </button>
+            </a>
           </div>
         </div>
       ))}

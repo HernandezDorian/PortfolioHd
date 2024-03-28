@@ -191,6 +191,12 @@ body {
       font-weight: 700;
       margin-bottom: 0;
     }
+    &__secondaryTitle {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     &__elem {
       color: white;
       display: flex;
@@ -200,6 +206,7 @@ body {
       justify-content: center;
       min-width: 900px;
       min-height: 300px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
       &__card {
         display: flex;
         flex-direction: column;
@@ -237,6 +244,10 @@ body {
       }
     }
   }
+}
+
+.pageContainer-comp {
+  width: auto !important;
 }
 
 @keyframes hand {

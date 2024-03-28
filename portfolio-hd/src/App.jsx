@@ -20,7 +20,7 @@ function App() {
 
       {/* Mes projets R */}
       <Projets />
-      <Calendar />
+
       {/* <Calendar /> */}
       {/* Contact Gradient */}
       <section>Contact</section>
