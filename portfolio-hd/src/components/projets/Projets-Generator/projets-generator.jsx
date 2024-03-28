@@ -1,4 +1,3 @@
-import BG from "./../../../assets/low-poly-abstract-background-Dark.jpg";
 import GithubLogo from "./../../../assets/github-142-svgrepo-com.svg";
 import PropTypes from "prop-types";
 
@@ -13,7 +12,7 @@ export default function ProjetsGenerator({ projects }) {
           key={index}
           className="Projects__div__elem"
           style={{
-            backgroundImage: `url('${BG}')`,
+            backgroundImage: `url('${project.background}')`,
           }}
         >
           <div className="Projects__div__elem__card">

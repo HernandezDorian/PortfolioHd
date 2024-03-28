@@ -1,5 +1,6 @@
 import PageContainer from "../page-container/page-container";
 import ProjetsGenerator from "./Projets-Generator/projets-generator";
+import BG from "./../../assets/low-poly-abstract-background-Dark.jpg";
 
 export default function Projets() {
   const Projects = [
@@ -8,6 +9,7 @@ export default function Projets() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
       github: "https://github.com",
+      background: BG,
     },
   ];
 
