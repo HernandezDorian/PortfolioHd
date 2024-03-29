@@ -1,4 +1,5 @@
 import GithubLogo from "./../../../assets/github-142-svgrepo-com.svg";
+import ViewLogo from "./../../../assets/view-svgrepo-com.svg";
 import PropTypes from "prop-types";
 
 export default function ProjetsGenerator({ projects }) {
@@ -22,16 +23,32 @@ export default function ProjetsGenerator({ projects }) {
             <p className="Project__div__elem__card__desc">
               {project.description}
             </p>
-            <a href={project.github} target="_blank">
-              <button className="Projects__div__elem__card__btn button">
-                GITHUB{" "}
-                <img
-                  className="Projects__div__elem__card__btn__git"
-                  src={GithubLogo}
-                  alt="Github Logo"
-                />
-              </button>
-            </a>
+            <div className="btncontainer">
+              {project.github && (
+                <a href={project.github} target="_blank">
+                  <button className="Projects__div__elem__card__btn button">
+                    GITHUB
+                    <img
+                      className="Projects__div__elem__card__btn__git"
+                      src={GithubLogo}
+                      alt="Github Logo"
+                    />
+                  </button>
+                </a>
+              )}
+              {project.live && (
+                <a href={project.live} target="_blank">
+                  <button className="Projects__div__elem__card__btn button">
+                    LIVE
+                    <img
+                      className="Projects__div__elem__card__btn__git"
+                      src={ViewLogo}
+                      alt="Github Logo"
+                    />
+                  </button>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       ))}

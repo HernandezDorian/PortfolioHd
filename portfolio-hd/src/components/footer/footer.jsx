@@ -4,7 +4,7 @@ import PageContainer from "../page-container/page-container";
 
 export default function Footer() {
   return (
-    <footer className="ft">
+    <footer className="ft" id="contact">
       <PageContainer>
         <div className="Footer">
           <h2 className="Footer__title">ME CONTACTER</h2>

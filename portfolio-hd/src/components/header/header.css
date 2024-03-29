@@ -1,0 +1,32 @@
+.BurgerMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 159, 254, 0.8);
+  position: fixed;
+  gap: 10px;
+  padding: 10px;
+  top: 80px;
+  animation: appear 300ms ease-in-out;
+  transform-origin: top;
+  z-index: 1;
+  border-bottom-right-radius: 8px;
+}
+
+.BurgerMenu a {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.BurgerMenu a:hover {
+  color: rgb(255, 223, 238);
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

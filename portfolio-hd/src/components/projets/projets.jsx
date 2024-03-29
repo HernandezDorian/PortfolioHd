@@ -9,26 +9,29 @@ export default function Projets() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
       github: "https://github.com",
+      live: "https://github.com",
       background: BG,
     },
     {
-      title: "Projet 1",
+      title: "Projet 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
       github: "https://github.com",
+      live: "",
       background: BG,
     },
     {
-      title: "Projet 1",
+      title: "Projet 3",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
       github: "https://github.com",
+      live: "",
       background: BG,
     },
   ];
 
   return (
-    <section className="Projects">
+    <section className="Projects" id="projects">
       <PageContainer>
         <div className="Projects__div">
           <h2 className="Projects__div__title">MES PROJETS</h2>
