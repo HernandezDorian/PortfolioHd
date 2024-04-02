@@ -1,19 +1,20 @@
 import PageContainer from "../page-container/page-container";
 import ProjetsGenerator from "./Projets-Generator/projets-generator";
 import BG from "./../../assets/low-poly-abstract-background-Dark.jpg";
+import ohmyfoodBG from "./../../assets/projets/ohmyfood.webp";
 import Calendar from "./../calendar/calendar.jsx";
 export default function Projets() {
   const Projects = [
     {
-      title: "Projet 1",
+      title: "Restaurant - OhMyFood",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
-      github: "https://github.com",
-      live: "https://github.com",
-      background: BG,
+        "Il s'agit du troisième projet que j'ai réalisé pour mon école il s'agit du d'un site statique ayant pour but de regrouper les différents menu de restaurants (HTML + CSS + SCSS)",
+      github: "https://github.com/HernandezDorian/OpenclassroomProjet4",
+      live: "https://ohmyfoodhd.netlify.app/",
+      background: ohmyfoodBG,
     },
     {
-      title: "Projet 2",
+      title: "Location immobilière - Kasa",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
       github: "https://github.com",
