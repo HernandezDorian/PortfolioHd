@@ -37,12 +37,12 @@ export default function Projets() {
           <h2 className="Projects__div__title">MES PROJETS</h2>
           <ProjetsGenerator projects={Projects} />
           {
-            <>
+            <div className="Projects__div--2">
               <h3 className="Projects__div__secondaryTitle">
                 LES JOURS OU JE CODE
               </h3>
               <Calendar />
-            </>
+            </div>
           }
         </div>
       </PageContainer>

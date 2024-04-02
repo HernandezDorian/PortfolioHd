@@ -28,13 +28,7 @@ export default function AboutMe() {
               consectetur libero id. Sit amet massa vitae tortor condimentum.
               Enim praesent elementum facilisis leo vel. Amet commodo nulla
               facilisi nullam vehicula ipsum a arcu cursus. Pharetra diam sit
-              amet nisl suscipit adipiscing bibendum est. Eu turpis egestas
-              pretium aenean pharetra magna ac placerat vestibulum. Dui vivamus
-              arcu felis bibendum ut tristique et egestas quis. Pharetra massa
-              massa ultricies mi quis hendrerit dolor magna eget. Nisl nunc mi
-              ipsum faucibus vitae aliquet nec ullamcorper sit. Tincidunt eget
-              nullam non nisi est sit. Leo integer malesuada nunc vel risus
-              commodo viverra maecenas accumsan.
+              amet nisl suscipit adipiscing bibendum est.
             </p>
           </div>
         </div>

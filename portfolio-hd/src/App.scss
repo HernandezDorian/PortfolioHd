@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-$tabletSize: 880px;
+$Tablet: 880px;
 $Lmobile: 475px;
 
 * {
@@ -54,6 +54,9 @@ Header {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    @media (max-width: $Lmobile) {
+      display: none;
+    }
     &__social {
       height: 50px;
       opacity: 80%;
@@ -65,6 +68,7 @@ Header {
   &__right {
     display: flex;
     align-items: center;
+
     &__nav {
       display: flex;
       font-size: 20px;
@@ -96,9 +100,18 @@ Header {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 96px;
+  @media (max-width: $Tablet) {
+    font-size: 28px;
+  }
+  &--containertype {
+    @media (max-width: $Lmobile) {
+      height: 50px;
+    }
+  }
   &__title {
     margin-top: 100px;
     display: flex;
+
     &__hand {
       animation: hand 1s ease-in-out infinite;
       transform-origin: bottom;
@@ -147,8 +160,9 @@ Header {
       height: 300px;
       font-size: 16px;
       font-weight: 400;
-      @media (max-width: $tabletSize) {
+      @media (max-width: $Tablet) {
         align-items: center;
+        height: auto;
       }
       &__title {
         font-size: 32px;
@@ -160,7 +174,7 @@ Header {
       min-width: 300px;
       min-height: 300px;
       overflow: hidden;
-      @media (max-width: $tabletSize) {
+      @media (max-width: $Tablet) {
         display: none;
       }
       &__photo {
@@ -213,6 +227,11 @@ Header {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    &--2 {
+      @media (max-width: $Tablet) {
+        display: none;
+      }
+    }
     &__title {
       font-size: 32px;
       font-weight: 700;
@@ -235,7 +254,7 @@ Header {
       min-height: 300px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
       border-radius: 8px;
-      @media (max-width: $tabletSize) {
+      @media (max-width: $Tablet) {
         width: 90%;
         min-width: 400px;
       }
@@ -244,6 +263,8 @@ Header {
         box-shadow: none;
         height: auto;
         width: auto;
+        min-height: auto;
+        min-width: 0;
       }
       &__card {
         display: flex;
@@ -258,9 +279,10 @@ Header {
         width: 300px;
         @media (max-width: $Lmobile) {
           background: rgba(0, 159, 255, 0.8);
-          width: 80% !important;
+          width: 100%;
           height: auto;
           padding: 10px;
+          border-radius: 0;
         }
         &__title {
           font-size: 32px;
@@ -296,11 +318,11 @@ Header {
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-  @media (max-width: $tabletSize) {
+  @media (max-width: $Tablet) {
     padding-bottom: 10px;
   }
   &__SVG {
-    @media (max-width: $tabletSize) {
+    @media (max-width: $Tablet) {
       display: none;
     }
   }
@@ -309,8 +331,11 @@ Header {
     align-items: center;
     justify-content: center;
     gap: 70px;
-    @media (max-width: $tabletSize) {
+    @media (max-width: $Tablet) {
       margin-top: 20px;
+    }
+    @media (max-width: $Lmobile) {
+      width: 100%;
     }
   }
   &__title {
@@ -327,16 +352,30 @@ Header {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 26px 80px;
     height: fit-content;
+    @media (max-width: $Lmobile) {
+      // background: none;
+      width: 100%;
+      border-radius: 0;
+      padding: 10px 0;
+    }
     &__form {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      @media (max-width: $Lmobile) {
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+      }
       &__input {
         padding: 5px;
         border-radius: 8px;
         border: none;
         font-size: 16px;
         font-weight: 400;
+        @media (max-width: $Lmobile) {
+          width: 90%;
+        }
         &:focus {
           outline: none;
         }
@@ -382,8 +421,8 @@ Header {
 .ft {
   background: linear-gradient(
     100deg,
-    rgba(0, 159, 255, 0.9) 3.68%,
-    rgba(236, 47, 75, 0.9) 90.49%
+    rgba(0, 159, 255, 1) 3.68%,
+    rgba(236, 47, 75, 1) 90.49%
   );
   margin-top: 30px;
 }

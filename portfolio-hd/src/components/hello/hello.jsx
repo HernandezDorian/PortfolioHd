@@ -22,7 +22,7 @@ export default function HelloMain() {
           Je suis{" "}
           <span className="Hello__description__name">Hernandez Dorian</span>
         </p>
-        <div>
+        <div className="Hello--containertype">
           <span className="Hello__typewritter">
             <Typewriter
               words={speciality}
