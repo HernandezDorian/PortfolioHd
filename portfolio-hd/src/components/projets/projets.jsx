@@ -5,7 +5,9 @@ import Calendar from "./../calendar/calendar.jsx";
 
 import ohmyfoodBG from "./../../assets/projets/ohmyfood.webp";
 import SophiebluelBG from "./../../assets/projets/SophieBluel.webp";
-
+import KasaBG from "./../../assets/projets/kasa.webp";
+import ArgentBank from "./../../assets/projets/ArgentBank.webp";
+import pomodoro from "./../../assets/projets/pomodoro.webp";
 export default function Projets() {
   const Projects = [
     {
@@ -20,17 +22,33 @@ export default function Projets() {
       title: "Architecte d'inteérieur - Sophie Bluel",
       description:
         "Il s'agit du sixième projet que j'ai réalisé pour mon école. C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ces projets. (HTML + CSS + JS)",
-      github: "https://github.com",
+      github: "https://github.com/HernandezDorian/OpenclassroomProjet6",
       live: "",
       background: SophiebluelBG,
     },
     {
       title: "Location immobilière - Kasa",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam.",
-      github: "https://github.com",
+        "Il s'agit du huitième projet que j'ai réalisé pour mon école. C'est un site permettant à une agence immobilière de mettre en relation des locataires et des loueurs. Permettant aux loueurs de publier les locations (HTML + CSS + ReactJS)",
+      github: "https://github.com/HernandezDorian/Kasa-react",
+      live: "https://dulcet-pasca-2632bd.netlify.app/",
+      background: KasaBG,
+    },
+    {
+      title: "Banque - ArgentBank",
+      description:
+        "Il s'agit du onzième projet que j'ai réalisé pour mon école. C'est un site permettant à une banque de gérer les comptes de ces clients. (HTML + CSS + ReactJS + React Redux)",
+      github: "https://github.com/HernandezDorian/ArgentBank-website",
       live: "",
-      background: BG,
+      background: ArgentBank,
+    },
+    {
+      title: "Pomodoro",
+      description:
+        "Il s'agit d'un projet personnel d'application de pomodoro afin de pouvoir mieux organiser mes journées de travail (HTML + CSS + ReactJS)",
+      github: "https://github.com/HernandezDorian/Pomodoro",
+      live: "https://elegant-travesseiro-6e41cf.netlify.app/",
+      background: pomodoro,
     },
   ];
 
