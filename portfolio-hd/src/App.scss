@@ -440,7 +440,7 @@ Header {
     width: 850px;
     height: 300px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -452,6 +452,12 @@ Header {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.hovered.containerElem {
+  @media (min-width: $Tablet) {
+    height: 330px;
+  }
 }
 
 .hovered .Projects__div__elem {
@@ -500,6 +506,6 @@ Header {
     transform: translateX(400px);
     background: rgba(125, 99, 159, 1);
     height: 300px;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 16px 16px 0px;
   }
 }
