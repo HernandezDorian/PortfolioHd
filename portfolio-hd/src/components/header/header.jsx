@@ -81,18 +81,31 @@ export default function Header() {
               <Hamburger toggled={isOpen} toggle={setOpen} />
             )}
             {isOpen && (
-              <nav className="BurgerMenu">
-                {" "}
-                <a href="#about" className="Header__right__nav__link">
-                  A propos
-                </a>
-                <a href="#projects" className="Header__right__nav__link">
-                  Projets
-                </a>
-                <a href="#contact" className="Header__right__nav__link">
-                  Contact
-                </a>
-              </nav>
+              <div className="BurgerMenu">
+                <nav className="BurgerContent">
+                  {" "}
+                  <a href="#about" className="Header__right__nav__link">
+                    A propos
+                  </a>
+                  <a href="#projects" className="Header__right__nav__link">
+                    Projets
+                  </a>
+                  <a href="#contact" className="Header__right__nav__link">
+                    Contact
+                  </a>
+                </nav>
+                <div className="BurgerSocial">
+                  {socials.map((social, index) => (
+                    <a href={social.link} key={index}>
+                      <img
+                        src={social.logo}
+                        alt={social.name}
+                        className="Header__left__social"
+                      />
+                    </a>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
           <div className="Header__left">

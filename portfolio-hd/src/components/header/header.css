@@ -1,7 +1,8 @@
 .BurgerMenu {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 159, 254, 0.8);
+  background-color: rgba(125, 99, 159, 0.8);
+  backdrop-filter: blur(2px);
   position: fixed;
   gap: 10px;
   padding: 10px;
@@ -10,12 +11,41 @@
   transform-origin: top;
   z-index: 1;
   border-bottom-right-radius: 8px;
+  height: 100lvh;
+  width: 100lvw;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.BurgerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.BurgerSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.BurgerSocial a {
+  padding: 0 !important;
+  height: fit-content;
+}
+
+.BurgerSocial img {
+  width: 75px;
+  height: auto;
 }
 
 .BurgerMenu a {
   color: white;
-  font-size: 24px;
+  font-size: 44px;
   font-weight: 800;
+  padding: 5px;
 }
 
 .BurgerMenu a:hover {
@@ -24,9 +54,10 @@
 
 @keyframes appear {
   0% {
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
+    scale: 0;
   }
   100% {
-    transform: translateY(0);
+    scale: 1;
   }
 }

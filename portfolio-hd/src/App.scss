@@ -55,7 +55,7 @@ Header {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    @media (max-width: $Lmobile) {
+    @media (max-width: $Tablet) {
       display: none;
     }
     &__social {
@@ -183,6 +183,7 @@ Header {
         height: 300px;
         transition: transform 0.2s ease-in-out;
         overflow: hidden;
+        border-radius: 10%;
 
         &:hover {
           transform: scale(1.2);
@@ -254,7 +255,7 @@ Header {
       width: 850px;
       min-height: 300px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
-      border-radius: 8px;
+      border-radius: 16px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -281,8 +282,11 @@ Header {
         backdrop-filter: blur(2px);
         padding: 15px 30px;
         width: 300px;
+        &:hover {
+          background: rgba(125, 99, 159, 1);
+        }
         @media (max-width: $Lmobile) {
-          background: rgba(0, 159, 255, 0.8);
+          background: rgba(125, 99, 159, 1);
           width: 100%;
           height: auto;
           padding: 10px;
@@ -431,6 +435,37 @@ Header {
   margin-top: 30px;
 }
 
+.containerElem {
+  @media (min-width: $Tablet) {
+    width: 850px;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    min-height: 300px;
+    border-radius: 16px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hovered .Projects__div__elem {
+  @media (min-width: $Tablet) {
+    animation: elem 400ms ease-in-out forwards;
+  }
+}
+
+.hovered .Projects__div__elem .Projects__div__elem__card {
+  @media (min-width: $Tablet) {
+    animation: card 400ms ease-in-out forwards;
+  }
+}
+
 @keyframes hand {
   0%,
   100% {
@@ -438,5 +473,33 @@ Header {
   }
   50% {
     transform: rotate(15deg) scaleX(-1);
+  }
+}
+
+@keyframes elem {
+  0% {
+    position: absolute;
+    width: 850px;
+    transform: translateX(0);
+  }
+  100% {
+    position: absolute;
+    transform: translateX(-150px);
+    width: 550px;
+  }
+}
+
+@keyframes card {
+  0% {
+    transform: translateX(0);
+    height: auto;
+    background: rgba(125, 99, 159, 0.6);
+    border-radius: 8px 8px 8px 8px;
+  }
+  100% {
+    transform: translateX(400px);
+    background: rgba(125, 99, 159, 1);
+    height: 300px;
+    border-radius: 0px 8px 8px 0px;
   }
 }
