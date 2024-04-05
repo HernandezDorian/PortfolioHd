@@ -16,7 +16,6 @@ export default function ProjetsGenerator({ projects }) {
           <div
             key={index}
             className={`containerElem ${isHovered ? "hovered" : ""}`}
-            onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             <div
@@ -25,7 +24,10 @@ export default function ProjetsGenerator({ projects }) {
                 backgroundImage: `url('${project.background}')`,
               }}
             >
-              <div className="Projects__div__elem__card">
+              <div
+                className="Projects__div__elem__card"
+                onMouseEnter={() => setIsHovered(true)}
+              >
                 <h3 className="Projects__div__elem__card__title">
                   {project.title}
                 </h3>

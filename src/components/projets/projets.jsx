@@ -13,7 +13,7 @@ export default function Projets() {
     {
       title: "Restaurant - OhMyFood",
       description:
-        "Il s'agit du troisième projet que j'ai réalisé pour mon école. C'est un site statique ayant pour but de regrouper les différents menu de restaurants. (HTML + CSS + SCSS)",
+        "C'est un site statique ayant pour but de regrouper les différents menu de restaurants. (HTML + CSS + SCSS)",
       github: "https://github.com/HernandezDorian/OpenclassroomProjet4",
       live: "https://ohmyfoodhd.netlify.app/",
       background: ohmyfoodBG,
@@ -21,7 +21,7 @@ export default function Projets() {
     {
       title: "Architecte d'inteérieur - Sophie Bluel",
       description:
-        "Il s'agit du sixième projet que j'ai réalisé pour mon école. C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ces projets. (HTML + CSS + JS)",
+        "C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ces projets. (HTML + CSS + JS)",
       github: "https://github.com/HernandezDorian/OpenclassroomProjet6",
       live: "",
       background: SophiebluelBG,
@@ -29,7 +29,7 @@ export default function Projets() {
     {
       title: "Location immobilière - Kasa",
       description:
-        "Il s'agit du huitième projet que j'ai réalisé pour mon école. C'est un site permettant à une agence immobilière de mettre en relation des locataires et des loueurs. Permettant aux loueurs de publier les locations (HTML + CSS + ReactJS)",
+        "C'est un site permettant à une agence immobilière de mettre en relation des locataires et des loueurs. Permettant aux loueurs de publier les locations (HTML + CSS + ReactJS)",
       github: "https://github.com/HernandezDorian/Kasa-react",
       live: "https://dulcet-pasca-2632bd.netlify.app/",
       background: KasaBG,
@@ -37,7 +37,7 @@ export default function Projets() {
     {
       title: "Banque - ArgentBank",
       description:
-        "Il s'agit du onzième projet que j'ai réalisé pour mon école. C'est un site permettant à une banque de gérer les comptes de ces clients. (HTML + CSS + ReactJS + React Redux)",
+        "C'est un site permettant à une banque de gérer les comptes de ces clients. (HTML + CSS + ReactJS + React Redux)",
       github: "https://github.com/HernandezDorian/ArgentBank-website",
       live: "",
       background: ArgentBank,

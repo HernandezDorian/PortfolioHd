@@ -462,13 +462,13 @@ Header {
 
 .hovered .Projects__div__elem {
   @media (min-width: $Tablet) {
-    animation: elem 400ms ease-in-out forwards;
+    animation: elem 300ms ease-in-out forwards;
   }
 }
 
 .hovered .Projects__div__elem .Projects__div__elem__card {
   @media (min-width: $Tablet) {
-    animation: card 400ms ease-in-out forwards;
+    animation: card 300ms ease-in-out forwards;
   }
 }
 
