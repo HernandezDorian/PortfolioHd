@@ -380,6 +380,14 @@ Header {
         border-radius: 0;
         align-items: center;
       }
+      &__error {
+        color: red;
+        font-size: 16px;
+        font-style: italic;
+        margin: 0;
+        text-align: center;
+        animation: errorMsg 0.3s ease-in-out;
+      }
       &__input {
         padding: 5px;
         border-radius: 8px;
@@ -505,6 +513,26 @@ Header {
     position: absolute;
     transform: translateX(-150px);
     width: 550px;
+  }
+}
+
+@keyframes errorMsg {
+  0% {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

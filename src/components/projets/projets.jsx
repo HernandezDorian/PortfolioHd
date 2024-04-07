@@ -1,6 +1,6 @@
 import PageContainer from "../page-container/page-container";
 import ProjetsGenerator from "./Projets-Generator/projets-generator";
-import BG from "./../../assets/low-poly-abstract-background-Dark.jpg";
+// import BG from "./../../assets/low-poly-abstract-background-Dark.jpg";
 import Calendar from "./../calendar/calendar.jsx";
 
 import ohmyfoodBG from "./../../assets/projets/ohmyfood.webp";
