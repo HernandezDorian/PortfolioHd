@@ -54,6 +54,9 @@ export default function Header() {
     };
   }, []);
 
+  const handleClick = () => {
+    setOpen(false);
+  };
   // --- Size END ---
 
   const [isOpen, setOpen] = useState(false);
@@ -67,7 +70,7 @@ export default function Header() {
               <Link
                 to="hello"
                 smooth={true}
-                duration={500}
+                duration={400}
                 className="Header__right__nav__link link"
                 spy={true}
                 onClick={() => setOpen(false)}
@@ -76,37 +79,37 @@ export default function Header() {
               </Link>
             </h1>
             {windowSize.width >= 880 ? (
-              <nav className="Header__right__nav">
+              <nav
+                className="Header__right__nav"
+                onClick={() => setOpen(false)}
+              >
                 <Link
                   to="about"
                   smooth={true}
-                  duration={500}
+                  duration={400}
                   offset={-80}
                   className="Header__right__nav__link link"
                   spy={true}
-                  onSetActive={() => setOpen(false)}
                 >
                   A propos
                 </Link>
                 <Link
                   to="projects"
                   smooth={true}
-                  duration={500}
+                  duration={400}
                   offset={-80}
                   className="Header__right__nav__link link"
                   spy={true}
-                  onClick={() => setOpen(false)}
                 >
                   Projets
                 </Link>
                 <Link
                   to="contact"
                   smooth={true}
-                  duration={500}
+                  duration={400}
                   offset={-80}
                   className="Header__right__nav__link link"
                   spy={true}
-                  onClick={() => setOpen(false)}
                 >
                   Contact
                 </Link>
@@ -117,31 +120,33 @@ export default function Header() {
             {isOpen && (
               <div className="BurgerMenu">
                 <nav className="BurgerContent">
-                  {" "}
                   <Link
                     to="about"
                     smooth={true}
-                    duration={500}
+                    duration={400}
                     offset={-80}
                     className="Header__right__nav__link"
+                    onClick={handleClick}
                   >
                     A propos
                   </Link>
                   <Link
                     to="projects"
                     smooth={true}
-                    duration={500}
+                    duration={400}
                     offset={-80}
                     className="Header__right__nav__link"
+                    onClick={handleClick}
                   >
                     Projets
                   </Link>
                   <Link
                     to="contact"
                     smooth={true}
-                    duration={500}
+                    duration={400}
                     offset={-80}
                     className="Header__right__nav__link"
+                    onClick={handleClick}
                   >
                     Contact
                   </Link>
