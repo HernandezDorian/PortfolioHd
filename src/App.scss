@@ -69,6 +69,10 @@ Header {
   &__right {
     display: flex;
     align-items: center;
+    @media (max-width: $Tablet) {
+      width: 100%;
+      justify-content: space-between;
+    }
 
     &__nav {
       display: flex;
@@ -452,6 +456,14 @@ Header {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #ffffff;
 }
 
 .hovered.containerElem {

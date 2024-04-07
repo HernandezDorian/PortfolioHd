@@ -4,6 +4,7 @@ import GithubSocial from "../../assets/social/github-142-svgrepo-comBlack.svg";
 import DiscordSocial from "../../assets/social/discord-svgrepo-com.svg";
 import InstagramSocial from "../../assets/social/instagram-167-svgrepo-com.svg";
 import LinkedinSocial from "../../assets/social/internet-linkedln-media-svgrepo-com.svg";
+import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
 // import { elastic as Menu } from "react-burger-menu";
 import "./header.css";
@@ -63,19 +64,52 @@ export default function Header() {
         <div className="Header">
           <div className="Header__right">
             <h1 className="Header__right__logo">
-              <a href="#hello">Hd.</a>
+              <Link
+                to="hello"
+                smooth={true}
+                duration={500}
+                className="Header__right__nav__link link"
+                spy={true}
+                onClick={() => setOpen(false)}
+              >
+                Hd.
+              </Link>
             </h1>
             {windowSize.width >= 880 ? (
               <nav className="Header__right__nav">
-                <a href="#about" className="Header__right__nav__link">
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="Header__right__nav__link link"
+                  spy={true}
+                  onSetActive={() => setOpen(false)}
+                >
                   A propos
-                </a>
-                <a href="#projects" className="Header__right__nav__link">
+                </Link>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="Header__right__nav__link link"
+                  spy={true}
+                  onClick={() => setOpen(false)}
+                >
                   Projets
-                </a>
-                <a href="#contact" className="Header__right__nav__link">
+                </Link>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="Header__right__nav__link link"
+                  spy={true}
+                  onClick={() => setOpen(false)}
+                >
                   Contact
-                </a>
+                </Link>
               </nav>
             ) : (
               <Hamburger toggled={isOpen} toggle={setOpen} />
@@ -84,15 +118,33 @@ export default function Header() {
               <div className="BurgerMenu">
                 <nav className="BurgerContent">
                   {" "}
-                  <a href="#about" className="Header__right__nav__link">
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className="Header__right__nav__link"
+                  >
                     A propos
-                  </a>
-                  <a href="#projects" className="Header__right__nav__link">
+                  </Link>
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className="Header__right__nav__link"
+                  >
                     Projets
-                  </a>
-                  <a href="#contact" className="Header__right__nav__link">
+                  </Link>
+                  <Link
+                    to="contact"
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className="Header__right__nav__link"
+                  >
                     Contact
-                  </a>
+                  </Link>
                 </nav>
                 <div className="BurgerSocial">
                   {socials.map((social, index) => (
