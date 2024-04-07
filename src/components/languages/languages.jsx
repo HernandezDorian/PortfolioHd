@@ -65,9 +65,7 @@ export default function Languages() {
 
   return (
     <div className="Aboutme__lang">
-      <h3 className="Aboutme__lang__title">
-        {"Tech que j'ai pu utiliser dans des projets web"}
-      </h3>
+      <h2 className="Aboutme__lang__title">{"Compétences"}</h2>
       <div className="Aboutme__lang__list">
         {Object.entries(svgs).map(([name, { svg: SvgSrc, text }], i) => (
           <img
@@ -79,9 +77,9 @@ export default function Languages() {
           />
         ))}
       </div>
-      <button className="Aboutme__lang__btn button" onClick={specialitybtn}>
+      {/* <button className="Aboutme__lang__btn button" onClick={specialitybtn}>
         Mes spécialités
-      </button>
+      </button> */}
     </div>
   );
 }

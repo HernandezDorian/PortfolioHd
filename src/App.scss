@@ -204,8 +204,9 @@ Header {
     &__btn {
     }
     &__title {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
+      text-transform: uppercase;
     }
     &__list {
       display: flex;
@@ -215,7 +216,7 @@ Header {
       flex-wrap: wrap;
       &__elem {
         opacity: 80%;
-        width: 60px;
+        width: 90px;
         cursor: pointer;
         &:hover {
           opacity: 100%;
