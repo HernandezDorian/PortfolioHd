@@ -73,16 +73,13 @@ export default function Header() {
                 duration={400}
                 className="Header__right__nav__link link"
                 spy={true}
-                onClick={() => setOpen(false)}
+                onClick={handleClick}
               >
                 Hd.
               </Link>
             </h1>
             {windowSize.width >= 880 ? (
-              <nav
-                className="Header__right__nav"
-                onClick={() => setOpen(false)}
-              >
+              <nav className="Header__right__nav">
                 <Link
                   to="about"
                   smooth={true}
