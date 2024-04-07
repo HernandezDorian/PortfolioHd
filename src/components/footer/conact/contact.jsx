@@ -22,6 +22,22 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
+    if (
+      !e.target.name.value ||
+      !e.target.email.value ||
+      !e.target.message.value
+    ) {
+      alert("Veuillez remplir tous les champs");
+      return;
+    }
+
+    // Vérification de l'email avec une regex
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailRegex.test(e.target.email.value)) {
+      alert("Veuillez entrer une adresse e-mail valide");
+      return;
+    }
+
     emailjs
       .sendForm(
         "service_zivrshm",
