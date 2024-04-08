@@ -60,9 +60,9 @@ export default function Projets() {
           <ProjetsGenerator projects={Projects} />
           {
             <div className="Projects__div--2">
-              <h3 className="Projects__div__secondaryTitle">
+              <h2 className="Projects__div__secondaryTitle">
                 LES JOURS OU JE CODE
-              </h3>
+              </h2>
               <Calendar />
             </div>
           }
