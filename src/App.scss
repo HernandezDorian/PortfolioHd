@@ -216,12 +216,16 @@ Header {
       justify-content: center;
       flex-wrap: wrap;
       &__elem {
-        opacity: 80%;
-        width: 90px;
-        cursor: pointer;
+        font-size: 90px;
+        opacity: 90%;
+        &::before {
+          color: black;
+        }
         &:hover {
           opacity: 100%;
-          scale: 1.2;
+          &::before {
+            color: white;
+          }
         }
       }
     }
@@ -276,6 +280,7 @@ Header {
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
       }
       &:hover::before {
         opacity: 0;
@@ -599,6 +604,16 @@ Header {
     color: white;
     &:hover {
       color: #ec2f4b;
+    }
+  }
+  .Aboutme__lang__list__elem {
+    &::before {
+      color: white;
+    }
+    &:hover {
+      &::before {
+        color: black;
+      }
     }
   }
 }

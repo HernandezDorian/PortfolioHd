@@ -10,19 +10,21 @@ export default function DarkMode() {
   };
 
   return (
-    <div className="darkMode">
-      <div className="switch">
-        <input
-          onChange={handleChange}
-          type="checkbox"
-          id="darkModeSwitch"
-          checked={switchDarkMode}
-          className="visually-hidden"
-        />
-        <label htmlFor="darkModeSwitch" className="slider">
-          <span className="visually-hidden">Switch to dark mode</span>
-        </label>
+    <>
+      <div className="darkMode">
+        <div className="switch">
+          <input
+            onChange={handleChange}
+            type="checkbox"
+            id="darkModeSwitch"
+            checked={switchDarkMode}
+            className="visually-hidden"
+          />
+          <label htmlFor="darkModeSwitch" className="slider">
+            <span className="visually-hidden">Switch to dark mode</span>
+          </label>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
