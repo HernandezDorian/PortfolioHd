@@ -8,7 +8,11 @@ export default function AboutMe() {
       <PageContainer>
         <div className="Aboutme__int">
           <div className="Aboutme__int__imgZone">
-            <img className="Aboutme__int__imgZone__photo" src={pp}></img>
+            <img
+              className="Aboutme__int__imgZone__photo"
+              src={pp}
+              alt="Ma tête"
+            ></img>
           </div>
           <div className="Aboutme__int__txtZone">
             <h2 className="Aboutme__int__txtZone__title">A PROPOS DE MOI</h2>

@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="Footer__contact">
               <Contact />
             </div>
-            <img src={MsgSVG} className="Footer__SVG"></img>
+            <img src={MsgSVG} className="Footer__SVG" alt="Lettre mail"></img>
           </div>
         </div>
       </PageContainer>

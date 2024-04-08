@@ -509,6 +509,25 @@ Header {
   }
 }
 
+.darkMode {
+  display: flex;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @keyframes hand {
   0%,
   100% {
@@ -564,5 +583,22 @@ Header {
     background: rgba(125, 99, 159, 1);
     height: 300px;
     border-radius: 0px 16px 16px 0px;
+  }
+}
+
+// Dark mode
+.dark {
+  color: white;
+  h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: #ec2f4b;
+    }
   }
 }

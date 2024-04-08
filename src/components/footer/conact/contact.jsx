@@ -59,6 +59,9 @@ export default function Contact() {
 
   return (
     <form className="Footer__contact__form" onSubmit={sendEmail}>
+      <label htmlFor="name" className="visually-hidden">
+        Nom
+      </label>
       <input
         className="Footer__contact__form__input"
         type="text"
@@ -66,6 +69,10 @@ export default function Contact() {
         name="name"
         placeholder="Votre nom"
       />
+
+      <label htmlFor="email" className="visually-hidden">
+        Email
+      </label>
       <input
         className="Footer__contact__form__input"
         type="email"
@@ -73,12 +80,17 @@ export default function Contact() {
         name="email"
         placeholder="Votre email"
       />
+
+      <label htmlFor="message" className="visually-hidden">
+        Message
+      </label>
       <textarea
         className="Footer__contact__form__input"
         id="message"
         name="message"
         placeholder="Votre message"
       ></textarea>
+
       {CodeError !== 0 && (
         <p className="Footer__contact__form__error">{errorMsg}</p>
       )}
