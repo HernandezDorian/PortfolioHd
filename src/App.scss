@@ -169,7 +169,12 @@ Header {
       @media (max-width: $Tablet) {
         align-items: center;
         height: auto;
-        text-align: center;
+      }
+      &__info {
+        @media (max-width: $Tablet) {
+          font-size: 20px;
+          padding: 0 15px;
+        }
       }
       &__title {
         font-size: 32px;
