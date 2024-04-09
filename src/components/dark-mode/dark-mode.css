@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #ffffff;
   transition: 0.4s;
   border-radius: 16px;
   border: 1px solid #000000;
@@ -38,12 +38,12 @@
 
 input:checked + .slider {
   background-color: #000000;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
-  background-color: #ccc;
+  background-color: #ffffff;
 }
 
 .slider.round {

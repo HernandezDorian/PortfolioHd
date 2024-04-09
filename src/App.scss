@@ -601,9 +601,10 @@ Header {
     color: white;
   }
   a {
-    color: white;
+    color: white !important;
+    cursor: pointer;
     &:hover {
-      color: #ec2f4b;
+      color: #ec2f4b !important;
     }
   }
   .Aboutme__lang__list__elem {

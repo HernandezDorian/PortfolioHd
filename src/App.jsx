@@ -24,8 +24,7 @@ function App() {
   return (
     <DarkModeContext.Provider value={[switchDarkMode, setSwitchDarkMode]}>
       <div className={switchDarkMode ? "dark" : "light"}>
-        <Header />
-
+        <Header switchDarkMode={switchDarkMode} />
         <HelloMain />
         <AboutMe />
         <Projets />

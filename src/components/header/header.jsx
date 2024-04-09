@@ -4,6 +4,13 @@ import GithubSocial from "../../assets/social/github-142-svgrepo-comBlack.svg";
 import DiscordSocial from "../../assets/social/discord-svgrepo-com.svg";
 import InstagramSocial from "../../assets/social/instagram-167-svgrepo-com.svg";
 import LinkedinSocial from "../../assets/social/internet-linkedln-media-svgrepo-com.svg";
+
+// White version
+import GithubSocialWhite from "../../assets/social/github-white.svg";
+import DiscordSocialWhite from "../../assets/social/discord-white.svg";
+import InstagramSocialWhite from "../../assets/social/instagram-white.svg";
+import LinkedinSocialWhite from "../../assets/social/linkedin-white.svg";
+//
 import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
 // import { elastic as Menu } from "react-burger-menu";
@@ -12,26 +19,30 @@ const socials = [
   {
     name: "Github",
     logo: GithubSocial,
+    white: GithubSocialWhite,
     link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
   },
   {
     name: "Discord",
     logo: DiscordSocial,
+    white: DiscordSocialWhite,
     link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
   },
   {
     name: "Instagram",
     logo: InstagramSocial,
+    white: InstagramSocialWhite,
     link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
   },
   {
     name: "Linkedin",
     logo: LinkedinSocial,
+    white: LinkedinSocialWhite,
     link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
   },
 ];
 
-export default function Header() {
+export default function Header({ switchDarkMode }) {
   // --- SIZE START ---
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
@@ -152,7 +163,7 @@ export default function Header() {
                   {socials.map((social, index) => (
                     <a href={social.link} key={index}>
                       <img
-                        src={social.logo}
+                        src={switchDarkMode ? social.white : social.logo}
                         alt={social.name}
                         className="Header__left__social"
                       />
@@ -166,7 +177,7 @@ export default function Header() {
             {socials.map((social, index) => (
               <a href={social.link} key={index}>
                 <img
-                  src={social.logo}
+                  src={switchDarkMode ? social.white : social.logo}
                   alt={social.name}
                   className="Header__left__social"
                 />
