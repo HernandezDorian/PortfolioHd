@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./App.scss";
 import AboutMe from "./components/about-me/about-me.jsx";
 import DarkMode from "./components/dark-mode/dark-mode.jsx";

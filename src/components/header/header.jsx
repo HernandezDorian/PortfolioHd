@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import PageContainer from "../page-container/page-container";
 import GithubSocial from "../../assets/social/github-142-svgrepo-comBlack.svg";
 import DiscordSocial from "../../assets/social/discord-svgrepo-com.svg";
@@ -20,19 +21,19 @@ const socials = [
     name: "Github",
     logo: GithubSocial,
     white: GithubSocialWhite,
-    link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
+    link: "https://github.com/HernandezDorian",
   },
   {
     name: "Discord",
     logo: DiscordSocial,
     white: DiscordSocialWhite,
-    link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
+    link: "https://discord.gg/H7Vz4ayrqg",
   },
   {
     name: "Instagram",
     logo: InstagramSocial,
     white: InstagramSocialWhite,
-    link: "https://www.linkedin.com/in/dorian-hernandez-4a9bb7294/",
+    link: "https://www.instagram.com/spikountryy/",
   },
   {
     name: "Linkedin",
@@ -43,6 +44,9 @@ const socials = [
 ];
 
 export default function Header({ switchDarkMode }) {
+  Header.propTypes = {
+    switchDarkMode: PropTypes.bool.isRequired,
+  };
   // --- SIZE START ---
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
@@ -161,7 +165,7 @@ export default function Header({ switchDarkMode }) {
                 </nav>
                 <div className="BurgerSocial">
                   {socials.map((social, index) => (
-                    <a href={social.link} key={index}>
+                    <a href={social.link} key={index} target="_blank">
                       <img
                         src={switchDarkMode ? social.white : social.logo}
                         alt={social.name}
@@ -175,7 +179,7 @@ export default function Header({ switchDarkMode }) {
           </div>
           <div className="Header__left">
             {socials.map((social, index) => (
-              <a href={social.link} key={index}>
+              <a href={social.link} key={index} target="_blank">
                 <img
                   src={switchDarkMode ? social.white : social.logo}
                   alt={social.name}
