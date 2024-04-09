@@ -56,7 +56,7 @@ export default function Projets() {
     <section className="Projects" id="projects">
       <PageContainer>
         <div className="Projects__div">
-          <h2 className="Projects__div__title">MES PROJETS</h2>
+          <h2 className="Projects__div__title">MES PRINCIPAUX PROJETS</h2>
           <ProjetsGenerator projects={Projects} />
           {
             <div className="Projects__div--2">
