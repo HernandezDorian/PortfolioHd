@@ -13,7 +13,7 @@ export default function Projets() {
     {
       title: "Restaurant - OhMyFood",
       description:
-        "C'est un site statique ayant pour but de regrouper les différents menu de restaurants. (HTML + CSS + SCSS)",
+        "C'est un site statique ayant pour but de regrouper les différents menus de restaurants. (HTML + CSS + SCSS)",
       github: "https://github.com/HernandezDorian/OpenclassroomProjet4",
       live: "https://ohmyfoodhd.netlify.app/",
       background: ohmyfoodBG,
@@ -21,7 +21,7 @@ export default function Projets() {
     {
       title: "Architecte d'intérieur - Sophie Bluel",
       description:
-        "C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ces projets. (HTML + CSS + JS)",
+        "C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ses projets. (HTML + CSS + JS)",
       github: "https://github.com/HernandezDorian/OpenclassroomProjet6",
       live: "",
       background: SophiebluelBG,
@@ -37,7 +37,7 @@ export default function Projets() {
     {
       title: "Banque - ArgentBank",
       description:
-        "C'est un site permettant à une banque de gérer les comptes de ces clients. (HTML + CSS + ReactJS + React Redux)",
+        "C'est un site permettant à une banque de gérer les comptes de ses clients. (HTML + CSS + ReactJS + React Redux)",
       github: "https://github.com/HernandezDorian/ArgentBank-website",
       live: "",
       background: ArgentBank,
