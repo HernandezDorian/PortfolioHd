@@ -19,7 +19,7 @@ export default function Projets() {
       background: ohmyfoodBG,
     },
     {
-      title: "Architecte d'inteérieur - Sophie Bluel",
+      title: "Architecte d'intérieur - Sophie Bluel",
       description:
         "C'est un site permettant à une architecte d'intérieure de l'éditer en temps réel pour ajouter et trier ces projets. (HTML + CSS + JS)",
       github: "https://github.com/HernandezDorian/OpenclassroomProjet6",
