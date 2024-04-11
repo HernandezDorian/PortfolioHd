@@ -1,6 +1,6 @@
 import Languages from "../languages/languages";
 import PageContainer from "../page-container/page-container";
-import pp from "./../../assets/PP.jpg";
+import pp from "./../../assets/PP.webp";
 
 export default function AboutMe() {
   return (

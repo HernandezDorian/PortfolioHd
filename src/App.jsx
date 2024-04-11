@@ -7,8 +7,8 @@ import Header from "./components/header/header";
 import HelloMain from "./components/hello/hello.jsx";
 import Projets from "./components/projets/projets.jsx";
 import { DarkModeContext } from "./components/dark-mode/DarkModeContext.jsx";
-import LightBg from "./assets/low-poly-abstract-background.jpg";
-import DarkBg from "./assets/low-poly-abstract-background-Dark.jpg";
+import LightBg from "./assets/low-poly-abstract-background.webp";
+import DarkBg from "./assets/low-poly-abstract-background-Dar.webp";
 
 function App() {
   const [switchDarkMode, setSwitchDarkMode] = useState(false);
