@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import "./dark-mode.css";
 import { DarkModeContext } from "./DarkModeContext";
+import darkImage from "./../../assets/dark.svg";
+import lightImage from "./../../assets/light.svg";
 
 export default function DarkMode() {
   const [switchDarkMode, setSwitchDarkMode] = useContext(DarkModeContext);
@@ -22,6 +24,11 @@ export default function DarkMode() {
           />
           <label htmlFor="darkModeSwitch" className="slider">
             <span className="visually-hidden">Switch to dark mode</span>
+            <img
+              src={switchDarkMode ? darkImage : lightImage}
+              className="switch-image"
+              alt="Switch"
+            />
           </label>
         </div>
       </div>
