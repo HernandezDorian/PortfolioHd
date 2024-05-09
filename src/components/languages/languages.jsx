@@ -7,6 +7,7 @@ const svgs = {
   react: { classId: "devicon-react-original-wordmark colored", text: "React" },
   redux: { classId: "devicon-redux-original colored", text: "Redux" },
   next: { classId: "devicon-nextjs-plain colored", text: "NextJs" },
+
   tailwind: {
     classId: "devicon-tailwindcss-original colored",
     text: "Tailwind CSS",
