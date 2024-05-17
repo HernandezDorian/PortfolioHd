@@ -9,7 +9,7 @@ import Projets from "./components/projets/projets.jsx";
 import { DarkModeContext } from "./components/dark-mode/DarkModeContext.jsx";
 import LightBg from "./assets/low-poly-abstract-background.webp";
 import DarkBg from "./assets/low-poly-abstract-background-Dar.webp";
-
+import FadeInSection from "./components/FadeInScroll/FadeInSection/FadeInSection";
 function App() {
   const [switchDarkMode, setSwitchDarkMode] = useState(false);
 
@@ -24,12 +24,24 @@ function App() {
   return (
     <DarkModeContext.Provider value={[switchDarkMode, setSwitchDarkMode]}>
       <div className={switchDarkMode ? "dark" : "light"}>
-        <Header switchDarkMode={switchDarkMode} />
-        <HelloMain />
-        <AboutMe />
-        <Projets />
-        <DarkMode />
-        <Footer />
+        <FadeInSection>
+          <Header switchDarkMode={switchDarkMode} />
+        </FadeInSection>
+        <FadeInSection>
+          <HelloMain />
+        </FadeInSection>
+        <FadeInSection>
+          <AboutMe />
+        </FadeInSection>
+        <FadeInSection>
+          <Projets />
+        </FadeInSection>
+        <FadeInSection>
+          <DarkMode />
+        </FadeInSection>
+        <FadeInSection>
+          <Footer />
+        </FadeInSection>
       </div>
     </DarkModeContext.Provider>
   );
