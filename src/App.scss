@@ -121,7 +121,8 @@ Header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 35%;
-  margin-top: 80px;
+  // margin-top: 80px;
+  padding-top: 80px;
   color: rgb(255, 255, 255);
   &::before {
     content: "";
