@@ -1,8 +1,32 @@
 // import React from "react";
+import React, { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import PageContainer from "../page-container/page-container";
 
 export default function HelloMain() {
+  // Taille écran début
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  // Taille écran fin
+
   const speciality = [
     "Développeur web",
     "Freelancer",
@@ -12,7 +36,8 @@ export default function HelloMain() {
   ];
 
   return (
-    <PageContainer>
+    // <PageContainer>
+    <div className="hellocontainer">
       <section className="Hello" id="hello">
         <h2 className="Hello__title">
           Bonjour !<div className="Hello__title__hand">👋</div>
@@ -35,6 +60,7 @@ export default function HelloMain() {
           <Cursor cursorColor="#ec2f4b" cursorStyle="_" />
         </div>
       </section>
-    </PageContainer>
+    </div>
+    // </PageContainer>
   );
 }
