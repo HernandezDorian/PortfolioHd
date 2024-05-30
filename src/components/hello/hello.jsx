@@ -29,7 +29,7 @@ export default function HelloMain() {
 
   const speciality = [
     "Développeur web",
-    "Freelancer",
+    // "Freelancer",
     "Spécialité Front : React.JS",
     "Spécialité Back : Next.JS",
     "Forte appétence front-end !",
