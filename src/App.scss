@@ -117,11 +117,12 @@ Header {
   font-weight: 800;
   // padding-top: 246px;
   // padding-bottom: 246px;
-  background-image: url("./assets/mebg.jpg");
+  background-image: url("./assets/mebgJOUR.webp");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 35%;
   margin-top: 80px;
+
   &::before {
     content: "";
     backdrop-filter: blur(2px);
@@ -143,6 +144,21 @@ Header {
     position: relative;
     z-index: 2;
   }
+
+  &__Lamp {
+    position: relative;
+    top: 50%;
+    right: 30%;
+    background-color: rgba(255, 255, 255, 0.212);
+    width: 20%;
+    height: 45%;
+    border-radius: 25% 70% 72% 6% / 24% 24% 75% 70%;
+    -webkit-border-radius: 25% 70% 72% 6% / 24% 24% 75% 70%;
+    -moz-border-radius: 25% 70% 72% 6% / 24% 24% 75% 70%;
+    -ms-border-radius: 25% 70% 72% 6% / 24% 24% 75% 70%;
+    -o-border-radius: 25% 70% 72% 6% / 24% 24% 75% 70%;
+  }
+
   @media (max-width: $Tablet) {
     font-size: 28px;
     background: none;
@@ -643,6 +659,7 @@ Header {
 // Dark mode
 .dark {
   .Hello {
+    background-image: url("./assets/mebgNUIT.webp");
     &::before {
       background: rgba(
         0,

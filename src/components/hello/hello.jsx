@@ -39,6 +39,7 @@ export default function HelloMain() {
     // <PageContainer>
     <div className="hellocontainer">
       <section className="Hello" id="hello">
+        {/* <div className="Hello__Lamp"></div> */}
         <h2 className="Hello__title">
           Bonjour !<div className="Hello__title__hand">👋</div>
         </h2>
