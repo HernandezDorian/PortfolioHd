@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import PageContainer from "../page-container/page-container";
+import { Link } from "react-scroll";
 
 export default function HelloMain() {
   // Taille écran début
@@ -59,6 +60,27 @@ export default function HelloMain() {
             />
           </span>
           <Cursor cursorColor="#ec2f4b" cursorStyle="_" />
+        </div>
+        <div className="Hello__BtnContainer">
+          <a
+            href="./CV_HERNANDEZ.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="Hello__BtnContainer__btn">Mon CV</button>
+          </a>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={400}
+            offset={-80}
+            className="Header__right__nav__link link"
+            spy={true}
+          >
+            <button className="Hello__BtnContainer__btn">
+              Mes réalisations
+            </button>
+          </Link>
         </div>
       </section>
     </div>
